@@ -1,0 +1,10 @@
+impacket==0.13.0
+pyasn1
+pyasn1-modules
+ldap3
+pyOpenSSL
+cryptography
+pycryptodomex
+dnspython
+six
+gssapi
