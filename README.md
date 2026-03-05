@@ -147,7 +147,9 @@ En modo **Kerberos** se usa `impacket` directamente, intentando primero LDAPS (p
 LDAPS (cert validado) → LDAPS (sin validar) → LDAP + StartTLS → LDAP plano
 ```
 
-> ⚠️ Sin TLS, algunos Domain Controllers no entregan el atributo `msDS-ManagedPassword`. Si el blob aparece vacío, intenta forzar TLS o usa `-k` con Kerberos.
+> Microsoft por diseño solo entrega el atributo `msDS-ManagedPassword` sobre canales cifrados en muchas configuraciones, depende de la configuración del DC algunos lo bloquean estrictamente y devuelven el atributo vacío si no hay TLS. Si el blob aparece vacío, el script intentará automáticamente LDAPS → StartTLS → LDAP plano.
+
+> Con `-k` (Kerberos) no es necesario TLS, Kerberos no depende de TLS para cifrar la sesión ya que es el propio protocolo Kerberos que cifra el tráfico con el ticket. Entonces aunque se use LDAP plano (puerto 389), la autenticación y los datos viajan cifrados a nivel Kerberos.
 
 ### 2. Parseo del blob `ms-DS-ManagedPassword`
 
