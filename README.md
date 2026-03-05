@@ -172,6 +172,23 @@ Se parsea `msDS-GroupMSAMembership` como un `SR_SECURITY_DESCRIPTOR` para mostra
 
 ---
 
-## Disclaimer
+## Descargo de Responsabilidad Legal
 
-Esta herramienta está pensada para uso en **entornos controlados** (laboratorios, CTFs, auditorías con autorización explícita por escrito). El uso contra sistemas sin autorización es ilegal. El autor no se hace responsable del mal uso de esta herramienta.
+Esta herramienta se proporciona solo con fines educativos y de pruebas de seguridad autorizadas.
+
+**Eres responsable de:**
+- Obtener la autorización adecuada antes de escanear cualquier sistema
+- Cumplir con todas las leyes y regulaciones aplicables
+- Usar esta herramienta de manera ética y responsable
+
+**El autor NO es responsable de:**
+- Cualquier mal uso o daño causado por esta herramienta
+- Cualquier consecuencia legal resultante del uso no autorizado
+- Cualquier daño a sistemas o redes
+
+**Al usar esta herramienta, aceptas que tienes permiso para probar los sistemas objetivo.**
+
+## Licencia
+
+
+Este proyecto se publica bajo la Licencia MIT. Consulta el archivo LICENSE para más detalles.
