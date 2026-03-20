@@ -4,7 +4,7 @@ pyasn1-modules
 ldap3
 pyOpenSSL
 cryptography
-pycryptodomex
+pycryptodome
 dnspython
 six
 gssapi
